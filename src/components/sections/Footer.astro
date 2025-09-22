@@ -1,6 +1,6 @@
 ---
 const today = new Date();
-import contactIconRaw from "../../assets/icons/contact-icon.svg?raw";
+import discordIconRaw from "../../assets/icons/discord-icon.svg?raw";
 import Button from "../ui/button/Button.astro";
 
 function sanitizeToWhite(svg: string, size = 18) {
@@ -16,27 +16,28 @@ function sanitizeToWhite(svg: string, size = 18) {
   return s;
 }
 
-const contactIcon = sanitizeToWhite(contactIconRaw);
+const discordIcon = sanitizeToWhite(discordIconRaw);
 const feedUrl = new URL('rss.xml', Astro.site).toString();
 const feedlyUrl = `https://feedly.com/i/subscription/feed/${feedUrl}`;
 const inoreaderUrl = `https://www.inoreader.com/?add_feed=${feedUrl}`;
 ---
 
 <footer id="contact" class="py-12 px-4 text-center">
-  <h2 class="text-2xl md:text-3xl font-semibold text-foreground">Want to work with me?</h2>
-  <p class="mt-2 text-[color:var(--color-text-muted)]">Let's build something together!</p>
+  <h2 class="text-2xl md:text-3xl font-semibold text-foreground">Need help building your scale?</h2>
+  <p class="mt-2 text-[color:var(--color-text-muted)]">Join the community on Discord!</p>
   <div class="mt-6 flex justify-center">
-    <Button href="https://www.linkedin.com/in/guihubie/" variant="secondary" size="md" >
-      <span class="inline-flex" aria-hidden="true" set:html={contactIcon} />
-      Get in touch
+    <Button href="https://discord.gg/vacg6QbQEh" variant="secondary" size="md" >
+      <span class="inline-flex items-center gap-2">
+        <span aria-hidden="true" set:html={discordIcon} />
+        WeighMyBru Discord
+      </span>
     </Button>
   </div>
   <div class="mt-6 text-sm text-[color:var(--color-text-muted)]">Made by: <a href="https://guihubie.com" class="hover:text-[color:var(--accent)]">guihubie</a>.</div>
   <div class="mt-6 flex items-center justify-center gap-4 text-sm">
     <a class="sw-btn-sm" href={feedlyUrl} target="_blank" rel="noopener noreferrer" aria-label="Subscribe in Feedly">Feedly</a>
-    <a class="sw-btn-sm" href={inoreaderUrl} target="_blank" rel="noopener noreferrer" aria-label="Subscribe in Inoreader">Inoreader</a>
-    <button class="sw-btn-sm" type="button" data-copy={feedUrl} aria-label="Copy RSS link">Copy RSS link</button>
-    <a class="sw-btn-sm" href="/blog/" aria-label="Browse all posts">All posts</a>
+    <a class="sw-btn-sm" href="/blog/" aria-label="Browse all guides">All guides</a>
+    <a class="sw-btn-sm" href="https://www.youtube.com/@weighmybru" aria-label="WeighMyBru YouTube Page">YouTube</a>
   </div>
   <script type="module">
     document.addEventListener('click', (e) => {

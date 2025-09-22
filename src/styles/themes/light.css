@@ -1,7 +1,7 @@
 /* Light theme tokens. Applied when an ancestor sets [data-theme="light"] (default) */
 [data-theme="light"] {
-  --accent: #FF7A1A; /* brighter for light */
-  --accent-dark: #EA580C;
+  --accent: #16A34A;
+  --accent-dark: #087a32;
   --accent-rgb: 255, 122, 26;
 
   --black: 15, 18, 25;

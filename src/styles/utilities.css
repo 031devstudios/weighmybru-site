@@ -83,7 +83,7 @@
 .sw-header .internal-links a:hover { color: var(--accent) !important; }
 .sw-header .group:hover { color: var(--accent); }
 
-/* Blog utilities */
+/* Guide utilities */
 .blog-prose { width: calc(100% - 2em); max-width: 860px; margin: 0 auto; padding: 1.25em; }
 .sw-share-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; color: var(--accent); transition: transform .15s ease, color .15s ease; }
 .sw-share-btn:hover { transform: translateY(-1px); color: var(--accent-dark); }
@@ -91,7 +91,7 @@
 .sw-share-btn svg :not([fill="none"]) { fill: currentColor !important; }
 .sw-share-btn svg [stroke] { stroke: currentColor !important; }
 
-/* Markdown table styling (applies inside .prose blocks used in blog posts) */
+/* Markdown table styling (applies inside .prose blocks used in guide posts) */
 .prose table {
   width: auto;               /* shrink to content */
   max-width: 100%;           /* but never exceed container */
@@ -159,7 +159,7 @@
   .sw-post-nav .sw-nav-btn { min-height: 64px; }
 }
 
-/* Blog index helpers */
+/* Guide index helpers */
 .blog-grid { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 1.25rem; align-items: stretch; }
 @media (min-width: 768px) { .blog-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .sw-btn { padding: .625rem 1rem; border-radius: 10px; background: var(--color-bg-secondary); color: var(--color-text-primary); border: 1px solid var(--color-border-light); }

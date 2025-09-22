@@ -1,5 +1,7 @@
 ---
 import Button from "../ui/button/Button.astro";
+import weighMyBruLogo from "../../assets/logos/Weighmybru-logo.png";
+
 interface Cta {
   text: string;
   href: string;
@@ -22,8 +24,18 @@ const {
 } = Astro.props as Props;
 ---
 
-<section class="w-full py-6 md:py-10">
+<section class="w-full pt-0 pb-0 md:pt-0 md:pb-0">
   <div class="mx-auto max-w-5xl px-4 text-center">
+    <!-- WeighMyBru Logo -->
+    <div class="mb-6">
+      <img 
+        src={weighMyBruLogo.src} 
+        alt="WeighMyBru Logo" 
+        class="mx-auto block w-52 md:w-86"
+        style="height: auto;"
+      />
+    </div>
+    
     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground">
       <span class="bg-gradient-to-r from-[var(--accent)] to-[var(--accent-dark)] bg-clip-text text-transparent">{title}</span>
     </h1>

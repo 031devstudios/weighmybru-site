@@ -2,9 +2,9 @@
 [data-theme="dark"],
 .dark {
   /* Primary Brand Colors (Flowing Orange) */
-  --accent: #FF8A4C;
-  --accent-dark: #F97316;
-  --accent-rgb: 255, 138, 76;
+  --accent: #16A34A;
+  --accent-dark: #087a32;
+  --accent-rgb: 2, 138, 76;
 
   /* Neutral Colors */
   --black: 255, 255, 255;
@@ -51,9 +51,9 @@
   --card-foreground: rgb(243, 244, 246);
   --popover: #282c34;
   --popover-foreground: rgb(243, 244, 246);
-  --primary: #FF8A4C;
+  --primary: #1d7008;
   --primary-foreground: #0f1219;
-  --secondary: #FFB36B;
+  --secondary: #559658;
   --secondary-foreground: rgb(243, 244, 246);
   --muted: rgba(255, 255, 255, 0.06);
   --muted-foreground: rgb(171, 178, 191);
@@ -70,7 +70,7 @@
   /* Slightly softer borders on translucent surfaces */
   --border: var(--surface-300);
   --input: var(--surface-300);
-  --outline: #F97316;
+  --outline: #65df79;
 }
 
 
