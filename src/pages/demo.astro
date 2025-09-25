@@ -6,8 +6,6 @@ import Footer from "../components/sections/Footer.astro";
 // Sections
 import HeroSection from "../components/sections/HeroSection.astro";
 import SkillsSection from "../components/sections/SkillsSection.astro";
-import WorkExperience from "../components/sections/WorkExperience.astro";
-import Studies from "../components/sections/Studies.astro";
 import ProjectsSection from "../components/sections/Projects.astro";
 
 // UI components
@@ -23,13 +21,10 @@ import BlogPagination from "../components/ui/nav/BlogPagination.astro";
 import ArrowSeparator from "../components/ui/separator/ArrowSeparator.astro";
 import GlowLineSeparator from "../components/ui/separator/GlowLineSeparator.astro";
 import ShareButtons from "../components/ui/share/ShareButtons.astro";
-import Timeline from "../components/ui/timeline/Timeline.astro";
 
 // Data
 import { logos } from "../data/logos";
 import { skills } from "../data/skills";
-import { work, workIcons } from "../data/work";
-import { studies } from "../data/studies";
 
 // Content
 import { getCollection } from 'astro:content';
@@ -114,12 +109,6 @@ const [firstPost, secondPost, thirdPost] = posts.slice(0, 3);
         <Carousel tools={logos} />
       </section>
 
-      <!-- Timeline -->
-      <section class="card-surface p-6 space-y-4">
-        <h2 class="text-2xl font-semibold">Timeline</h2>
-        <Timeline items={work} icons={workIcons} centered={false} />
-      </section>
-
       <!-- Post components using content collection -->
       {firstPost && (
         <section class="card-surface p-6 space-y-4">
@@ -148,11 +137,9 @@ const [firstPost, secondPost, thirdPost] = posts.slice(0, 3);
         </section>
       )}
 
-      <!-- Sections: Skills, Work, Studies, Projects -->
+      <!-- Sections: Skills, Projects -->
       <section class="space-y-6">
         <SkillsSection title="Skills & Tools" skills={skills} />
-        <WorkExperience title="Work Experience" items={work} />
-        <Studies title="Studies" items={studies} />
         <ProjectsSection title="Projects" />
       </section>
     </main>
