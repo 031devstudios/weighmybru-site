@@ -1,16 +1,25 @@
 ---
-title: 'Example Post One'
-description: 'Sample article demonstrating the blog layout, cards, and meta.'
-pubDate: 'Aug 12 2025'
-heroImage: '../../assets/images/example-blog-hero1.jpg'
-category: 'Showcase'
-tags: ['template', 'demo']
+title: 'Calibration Guide'
+description: 'Step-by-step guide for calibrating your WeighMyBru scale for maximum precision.'
+pubDate: 'Sep 30 2025'
+heroImage: '../../assets/images/calibration-guide.png'
+category: 'Setup'
+tags: ['calibration', 'precision', 'setup']
 ---
 
-This is a sample article used in the starter template. Replace it with your own content.
+# Coming Soon! 📏
 
-- Edit the title, description, and frontmatter
-- Drop your images into `src/assets/images/`
-- Update tags and categories as needed
+We're working on a comprehensive calibration guide to help you get the most accurate measurements from your WeighMyBru scale.
+
+This guide will cover:
+- ✅ Initial setup and calibration
+- ✅ Using precision weights
+- ✅ Testing accuracy
+- ✅ Troubleshooting common issues
+- ✅ Recalibration procedures
+
+Stay tuned for more detailed guides to help you perfect your coffee brewing setup!
+
+*More guides coming soon...*
 
 
