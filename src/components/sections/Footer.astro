@@ -18,7 +18,6 @@ function sanitizeToWhite(svg: string, size = 18) {
 
 const discordIcon = sanitizeToWhite(discordIconRaw);
 const feedUrl = new URL('rss.xml', Astro.site).toString();
-const feedlyUrl = `https://feedly.com/i/subscription/feed/${feedUrl}`;
 const inoreaderUrl = `https://www.inoreader.com/?add_feed=${feedUrl}`;
 ---
 
@@ -33,9 +32,7 @@ const inoreaderUrl = `https://www.inoreader.com/?add_feed=${feedUrl}`;
       </span>
     </Button>
   </div>
-  <div class="mt-6 text-sm text-[color:var(--color-text-muted)]">Made by: <a href="https://guihubie.com" class="hover:text-[color:var(--accent)]">guihubie</a>.</div>
   <div class="mt-6 flex items-center justify-center gap-4 text-sm">
-    <a class="sw-btn-sm" href={feedlyUrl} target="_blank" rel="noopener noreferrer" aria-label="Subscribe in Feedly">Feedly</a>
     <a class="sw-btn-sm" href="/blog/" aria-label="Browse all guides">All guides</a>
     <a class="sw-btn-sm" href="https://www.youtube.com/@weighmybru" aria-label="WeighMyBru YouTube Page">YouTube</a>
   </div>

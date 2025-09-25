@@ -6,10 +6,6 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import HeroSection from '../components/sections/HeroSection.astro';
 import SkillsSection from '../components/sections/SkillsSection.astro';
 import { skills } from '../data/skills';
-import WorkExperience from '../components/sections/WorkExperience.astro';
-import { work } from '../data/work';
-import Studies from '../components/sections/Studies.astro';
-import { studies } from '../data/studies';
 import Carousel from '../components/ui/carousel/Carousel.astro';
 import { logos } from '../data/logos';
 import ArrowSeparator from '../components/ui/separator/ArrowSeparator.astro'
@@ -57,10 +53,6 @@ import figmaLogo from '../assets/logos/Figma-logo.svg';
     <section class="py-6">
       <ArrowSeparator />
       <SkillsSection title="Integrations & Ecosystem" skills={skills} />   
-      <ArrowSeparator />
-      <WorkExperience title="Work Experience" items={work} />
-      <ArrowSeparator />
-      <Studies title="Studies" items={studies} />
       <GlowLineSeparator />
     </section>
 		</main>

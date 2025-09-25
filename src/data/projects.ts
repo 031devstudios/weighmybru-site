@@ -1,58 +1,58 @@
-import PhoenixIcon from '../assets/logos/Phoenix-logo.svg?raw';
-import N8nIcon from '../assets/logos/N8n-logo.svg?raw';
-import SupabaseIcon from '../assets/logos/Supabase-logo.svg?raw';
-import PosthogIcon from '../assets/logos/posthog-logo.svg?raw';
-import PythonIcon from '../assets/logos/Python-logo.svg?raw';
-import TailwindIcon from '../assets/logos/Tailwind-logo.svg?raw';
+import BluetoothIcon from '../assets/logos/Bluetooth-logo.svg?raw';
+import WiFiIcon from '../assets/logos/WiFi-logo.svg?raw';
+import BeanConquerorIcon from '../assets/logos/BeanConqueror-logo.svg?raw';
+import GaggiMateIcon from '../assets/logos/GaggiMate-logo.svg?raw';
+import CleverCoffeeIcon from '../assets/logos/CleverCoffee-logo.svg?raw';
+import GaggiuinoIcon from '../assets/logos/Gaggiuino-logo.svg?raw';
 
 
 export const projects = [
 	{
-		title: "Workflow Automation Orchestrator (n8n)",
-		techStack: "n8n • Node.js • TypeScript • PostgreSQL",
-		description: "Event‑driven workflows for data sync, notifications, and back‑office automation. Custom nodes, secrets management, retries, and metrics.",
-		ctaText: "View Repo →",
+		title: "Bluetooth Connectivity",
+		techStack: "BLE • Low Power • Real-time Data",
+		description: "Seamless wireless connection to your favorite brewing apps. Low energy consumption for extended battery life during your brewing sessions.",
+		ctaText: "Learn More →",
 		ctaLink: "#",
-		icon: N8nIcon
+		icon: BluetoothIcon
 	},
 	{
-		title: "SaaS API Starter (Auth, Billing, RBAC)",
-		techStack: "Node.js • TypeScript • PostgreSQL • Supabase • Stripe",
-		description: "Production‑ready REST/GraphQL API with JWT auth, role‑based access, Stripe subscriptions, and rate‑limited endpoints.",
-		ctaText: "Get Source < / >",
+		title: "WiFi Integration",
+		techStack: "802.11 • Cloud Sync • OTA Updates",
+		description: "Connect to your home network for cloud recipe sync, firmware updates, and remote monitoring of your brewing progress.",
+		ctaText: "Setup Guide →",
 		ctaLink: "#",
-		icon: SupabaseIcon
+		icon: WiFiIcon
 	},
 	{
-		title: "Realtime Chat Service",
-		techStack: "Phoenix • WebSockets • Redis • Docker",
-		description: "Low‑latency chat with channels, presence, and backpressure handling. Includes load tests and horizontal scaling notes.",
-		ctaText: "Live Demo →",
+		title: "Bean Conqueror Compatible",
+		techStack: "Android • iOS • Recipe Management",
+		description: "Full integration with Bean Conqueror app for comprehensive brew tracking, recipe management, and detailed brewing analytics.",
+		ctaText: "Download App →",
 		ctaLink: "#",
-		icon: PhoenixIcon
+		icon: BeanConquerorIcon
 	},
 	{
-		title: "Product Analytics Pipeline",
-		techStack: "Node.js • PostHog • PostgreSQL • ClickHouse",
-		description: "Event ingestion, batching, and replay; user properties and cohorts; dashboards for funnels, retention, and feature adoption.",
-		ctaText: "Read Case Study →",
+		title: "GaggiMate Integration",
+		techStack: "Espresso • Shot Timing • Pressure Profiling",
+		description: "Perfect companion for espresso brewing with GaggiMate. Real-time weight feedback for consistent shot extraction and dialing.",
+		ctaText: "Espresso Guide →",
 		ctaLink: "#",
-		icon: PosthogIcon
+		icon: GaggiMateIcon
 	},
 	{
-		title: "Data Ingestion & ETL",
-		techStack: "Python • Airflow • PostgreSQL • S3",
-		description: "Scheduled extract/transform/load with schema migrations, data quality checks, and partitioned tables for analytics.",
-		ctaText: "View Repo →",
+		title: "CleverCoffee Support",
+		techStack: "Pour Over • Brew Ratios • Temperature",
+		description: "Optimized for pour-over brewing with CleverCoffee integration. Precise measurements for the perfect coffee-to-water ratio every time.",
+		ctaText: "Brewing Tips →",
 		ctaLink: "#",
-		icon: PythonIcon
+		icon: CleverCoffeeIcon
 	},
 	{
-		title: "Design System",
-		techStack: "React • TypeScript • Tailwind CSS • Storybook",
-		description: "Accessible UI kit with tokens, theming, and testing. Published as a versioned package with changelogs and docs.",
-		ctaText: "Docs →",
+		title: "Gaggiuino Compatible",
+		techStack: "Dual Boiler • PID Control • Flow Rate",
+		description: "Advanced integration with Gaggiuino systems for professional-grade espresso brewing with real-time weight and flow monitoring.",
+		ctaText: "Pro Setup →",
 		ctaLink: "#",
-		icon: TailwindIcon
+		icon: GaggiuinoIcon
 	},
 ];

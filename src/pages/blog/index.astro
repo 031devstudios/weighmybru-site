@@ -1,5 +1,5 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/sections/Footer.astro';
 import Header from '../../components/sections/Header.astro';
@@ -7,20 +7,11 @@ import BlogHero from '../../components/sections/BlogHero.astro';
 import BlogAllArticles from '../../components/sections/BlogAllArticles.astro';
 import BlogPagination from '../../components/ui/nav/BlogPagination.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
-import FeaturedPost from '../../components/ui/card/FeaturedPost.astro';
-import { calculateReadingTimeFromHtml } from '../../lib/reading';
 
 const PAGE_SIZE = 6;
 const posts = (await getCollection('blog')).sort((a,b)=>+b.data.pubDate-+a.data.pubDate);
-const [featured, ...rest] = posts;
-const firstPagePosts = rest.slice(0, PAGE_SIZE);
-const totalPages = Math.max(1, Math.ceil(rest.length / PAGE_SIZE));
-let featuredReading = 0;
-if (featured) {
-  const { Content } = await render(featured);
-  const html = await Astro.slots.render('default');
-  featuredReading = calculateReadingTimeFromHtml(html ?? '');
-}
+const firstPagePosts = posts.slice(0, PAGE_SIZE);
+const totalPages = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
 ---
 
 <!doctype html>
@@ -35,12 +26,6 @@ if (featured) {
         <Header />
         <BlogHero title="Guides" subtitle="Step-by-step tutorials for building, flashing, troubleshooting, and getting the most from your WeighMyBru scale." />
         <main class="use-utility-layout mx-auto max-w-5xl px-3 py-5 space-y-7">
-            {featured && (
-              <section class="card-surface p-4 md:p-5 hover-lift sw-featured-card">
-                <FeaturedPost post={featured} readingTimeMin={featuredReading} />
-              </section>
-            )}
-
             <BlogAllArticles posts={firstPagePosts} />
             <BlogPagination currentPage={1} totalPages={totalPages} />
         </main>
