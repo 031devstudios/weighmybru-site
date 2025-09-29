@@ -5,19 +5,164 @@ import Footer from "../components/sections/Footer.astro";
 import Projects from "../components/sections/Projects.astro";
 import HeroSection from "../components/sections/HeroSection.astro";
 import GlowLineSeparator from "../components/ui/separator/GlowLineSeparator.astro";
+import Button from "../components/ui/button/Button.astro";
 ---
-
 
 <html lang="en" data-theme="dark" class="dark">
   <head>
-    <BaseHead title="Features" description="Features of WeighMyBru scale" />
+    <BaseHead title="Features" description="Comprehensive features of the WeighMyBru smart coffee scale" />
   </head>
   <body>
     <Header />
     <main>
-      <HeroSection title="WeighMyBru Features" subtitle="A few key features of the WeighMyBru scale." />
-      <Projects />
+      <HeroSection title="WeighMyBru Features" subtitle="Professional-grade features engineered for precision coffee brewing." />
+      
+      <!-- Core Features Section -->
+      <section class="mx-auto max-w-6xl px-4 py-16">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Core Features</h2>
+          <p class="text-xl text-[color:var(--color-text-secondary)] max-w-3xl mx-auto">
+            Every WeighMyBru scale comes packed with features designed to elevate your coffee brewing experience.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Webserver -->
+          <div class="card-surface p-8 text-center group hover:-translate-y-1 transition-transform duration-200">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-xl bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Built-in Webserver</h3>
+            <p class="text-[color:var(--color-text-secondary)] leading-relaxed">
+              Access your scale's controls through a web interface. Configure settings, run calibration, and monitor status from any device on your network.
+            </p>
+          </div>
+
+          <!-- Bluetooth -->
+          <div class="card-surface p-8 text-center group hover:-translate-y-1 transition-transform duration-200">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-xl bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.71 7.71L12 2h-1v7.59L6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 11 14.41V22h1l5.71-5.71L13.41 12l4.3-4.29zM13 5.83l1.88 1.88L13 9.59V5.83zm1.88 10.46L13 18.17v-3.76l1.88 1.88z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Bluetooth Connectivity</h3>
+            <p class="text-[color:var(--color-text-secondary)] leading-relaxed">
+              Low-energy Bluetooth connection for seamless integration with your favorite brewing apps and real-time data transmission.
+            </p>
+          </div>
+
+          <!-- OLED Display -->
+          <div class="card-surface p-8 text-center group hover:-translate-y-1 transition-transform duration-200">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-xl bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12H3V5h18v10z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">OLED Display</h3>
+            <p class="text-[color:var(--color-text-secondary)] leading-relaxed">
+              Clear, bright OLED screen shows weight, timer, flow rate, and battery status at a glance. Perfect visibility in any lighting condition.
+            </p>
+          </div>
+
+          <!-- Calibration -->
+          <div class="card-surface p-8 text-center group hover:-translate-y-1 transition-transform duration-200">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-xl bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Web-based Calibration</h3>
+            <p class="text-[color:var(--color-text-secondary)] leading-relaxed">
+              Precision calibration through the web interface using standard weights. Ensures maximum accuracy for your brewing measurements.
+            </p>
+          </div>
+
+          <!-- Flow Rate -->
+          <div class="card-surface p-8 text-center group hover:-translate-y-1 transition-transform duration-200">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-xl bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Real-time Flow Rate</h3>
+            <p class="text-[color:var(--color-text-secondary)] leading-relaxed">
+              Monitor pour rate in real-time for consistent extraction. Perfect for dialing in espresso shots and pour-over brewing techniques.
+            </p>
+          </div>
+
+          <!-- Shot Timer -->
+          <div class="card-surface p-8 text-center group hover:-translate-y-1 transition-transform duration-200">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-xl bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42C16.07 4.74 14.12 4 12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9 9-4.03 9-9c0-2.12-.74-4.07-1.97-5.61zM12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Shot Timer</h3>
+            <p class="text-[color:var(--color-text-secondary)] leading-relaxed">
+              Built-in timer automatically starts when weight is detected. Track extraction time for consistent espresso shots and brewing recipes.
+            </p>
+          </div>
+
+          <!-- GaggiMate Integration -->
+          <div class="card-surface p-8 text-center group hover:-translate-y-1 transition-transform duration-200">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-xl bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">GaggiMate Integration</h3>
+            <p class="text-[color:var(--color-text-secondary)] leading-relaxed">
+              Native integration with GaggiMate for comprehensive espresso machine control. Weight data feeds directly into your brewing workflow.
+            </p>
+          </div>
+
+          <!-- Bean Conqueror Integration -->
+          <div class="card-surface p-8 text-center group hover:-translate-y-1 transition-transform duration-200">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-xl bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Bean Conqueror Integration</h3>
+            <p class="text-[color:var(--color-text-secondary)] leading-relaxed">
+              Full compatibility with Bean Conqueror app for detailed brew tracking, recipe management, and brewing analytics across all coffee methods.
+            </p>
+          </div>
+
+          <!-- Battery Monitoring -->
+          <div class="card-surface p-8 text-center group hover:-translate-y-1 transition-transform duration-200">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-xl bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Battery Monitoring</h3>
+            <p class="text-[color:var(--color-text-secondary)] leading-relaxed">
+              Smart battery management with real-time status monitoring. Long-lasting battery life ensures reliable operation for extended brewing sessions.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <GlowLineSeparator />
+
+      <!-- Call to Action -->
+      <section class="mx-auto max-w-4xl px-4 py-16 text-center">
+        <h2 class="text-3xl font-bold mb-6">Ready to Upgrade Your Brewing?</h2>
+        <p class="text-xl text-[color:var(--color-text-secondary)] mb-8 max-w-2xl mx-auto">
+          Join the WeighMyBru community and experience precision coffee brewing with professional-grade features at an affordable price.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button href="/blog/assembly-guide" variant="primary" size="lg">
+            Build Your Scale
+          </Button>
+          <Button href="https://discord.gg/vacg6QbQEh" variant="secondary" size="lg">
+            Join Community
+          </Button>
+        </div>
+      </section>
     </main>
     <Footer />
   </body>
