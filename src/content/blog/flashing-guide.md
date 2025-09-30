@@ -80,7 +80,7 @@ Check if the project has a `platformio.ini` file in the root directory. If not, 
 
 ```ini
 [env:esp32-s3-devkitc-1]
-platform = espressif32
+platform = espressif32@6.12.0
 board = esp32-s3-devkitc-1
 framework = arduino
 monitor_speed = 115200
@@ -105,7 +105,7 @@ lib_deps =
 	robtillaart/HX711@^0.6.0
 	https://github.com/me-no-dev/ESPAsyncWebServer.git
 	https://github.com/me-no-dev/AsyncTCP.git
-	ESP32 BLE Arduino
+	h2zero/NimBLE-Arduino@^1.4.0
 	adafruit/Adafruit SSD1306@^2.5.7
 	adafruit/Adafruit GFX Library@^1.11.9
 ```
