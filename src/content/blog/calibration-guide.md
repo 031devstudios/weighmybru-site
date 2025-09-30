@@ -2,7 +2,7 @@
 title: 'Calibration Guide'
 description: 'Complete step-by-step guide for calibrating your WeighMyBru scale for accurate measurements.'
 pubDate: 'Sep 29 2025'
-heroImage: '/src/assets/images/calibration-guide.png'
+heroImage: '../../assets/images/calibration-guide.png'
 category: 'Setup'
 tags: ['calibration', 'setup', 'accuracy', 'webui']
 ---
@@ -20,7 +20,7 @@ The calibration process is essential to ensure your scale delivers accurate and 
 ## 🧭 Step-by-Step Calibration Instructions
 
 ### **Step 1: Tare the Scale**
-<img src="/src/assets/images/calibration1.png" alt="WebUI Tare Process" width="600" height="300"><br>
+<img src="../../assets/images/calibration1.png" alt="WebUI Tare Process" width="600" height="300"><br>
 - Click the **Tare** button.
 - The screen will display: `"Taring..."`.
 - Once complete, you will see: `"Scale tared!"`
@@ -30,7 +30,7 @@ The calibration process is essential to ensure your scale delivers accurate and 
 ---
 
 ### **Step 2: Calibrate with a Known Weight**
-<img src="/src/assets/images/calibration2.png" alt="WebUI Calibration Process" width="600" height="300"><br>
+<img src="../../assets/images/calibration2.png" alt="WebUI Calibration Process" width="600" height="300"><br>
 - Place a known weight (e.g. 100g, 200g) onto the scale.
 - Enter the exact weight value (in grams) into the input field.
 - Click the **Calibrate** button.
@@ -40,7 +40,7 @@ The calibration process is essential to ensure your scale delivers accurate and 
 
 This **calibration factor** is stored in the scale's EEPROM memory, so you do **not** need to recalibrate each time you power on the device.
 
-<img src="/src/assets/images/calibration3.png" alt="WebUI Calibration Complete" width="600" height="300"><br>
+<img src="../../assets/images/calibration3.png" alt="WebUI Calibration Complete" width="600" height="300"><br>
 
 ---
 
