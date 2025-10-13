@@ -54,8 +54,8 @@ sudo apt install git
 
 3. **Clone the repository:**
    ```bash
-   git clone https://github.com/031devstudios/weighmybru.git
-   cd weighmybru
+   git clone https://github.com/031devstudios/weighmybru2.git
+   cd weighmybru2
    ```
 
 ---
@@ -67,7 +67,7 @@ sudo apt install git
 1. **Launch VSCode**
 2. **Open the project folder:**
    - File → Open Folder
-   - Navigate to and select the `weighmybru` folder you just cloned
+   - Navigate to and select the `weighmybru2` folder you just cloned
    - Click "Select Folder"
 
 3. **Wait for PlatformIO to initialize** (you'll see activity in the bottom status bar)
@@ -155,7 +155,7 @@ lib_deps =
    ```
 3. **Upload to ESP32:**
    ```bash
-   pio run -t upload -t uploadfs
+   pio run -t upload && -t uploadfs
    ```
 
 ### Using VSCode Status Bar:
