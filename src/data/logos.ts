@@ -36,7 +36,7 @@ const integrationStatus: Record<string, 'available' | 'coming-soon'> = {
   'Bean Conqueror': 'available', 
   'Wi Fi': 'available',
   'Bluetooth': 'available',
-  'Gaggiuino': 'coming-soon',
+  'Gaggiuino': 'available',
   'Clever Coffee': 'coming-soon',
   'Weighmybru': 'available',
 };
