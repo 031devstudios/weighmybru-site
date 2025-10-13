@@ -23,17 +23,32 @@ Follow along with our detailed assembly video guide:
   </iframe>
 </div>
 
-## What You'll Need
+## Bill Of Materials
+**NOTE** <br>
+Ensure the correct items are selected when purchasing. Some of the links have multiple options. It is always a good idea to purchase extra boards for items like HX711 or Capacitive Touch Pads, as sometimes depinning these can destroy the boards traces.
 
-Before starting the assembly, make sure you have:
+| Qty |                 Item                |             Aliexpress Link                |        Amazon Link       |
+|-----|-------------------------------------|--------------------------------------------|--------------------------|
+|  1  | 500g Mini Loadcell (I-shaped)       | https://s.click.aliexpress.com/e/_c4C1w6PZ | https://a.co/d/6kvxZ0H |  
+|  1  | HX711                               | https://s.click.aliexpress.com/e/_c3TSpcUT | https://a.co/d/3KiYRkA |  
+|  1  | ESP32-S3-Supermini Board            | https://s.click.aliexpress.com/e/_c3ay7dDv | https://a.co/d/6289vbS |  
+|  2  | Capacitive Tocuh Pads               | https://s.click.aliexpress.com/e/_c3WIlVuX | https://a.co/d/014di6l |  
+|  1  | 0.91" SSD1306 OLED Display          | https://s.click.aliexpress.com/e/_c3kybwLD | https://a.co/d/9UClWku |  
+|  1  | JST-PH 2.0 Male Connector           | https://s.click.aliexpress.com/e/_c3F8rJlv | https://a.co/d/3BZGuHW |  
+|  1  | Slide Switch (5mm handle)           | https://s.click.aliexpress.com/e/_c4nZfmFD | https://a.co/d/9KRqMyF |  
+|  1  | Hookup Wire (Various Colors)        || https://a.co/d/1Fs8os9 |  
+|  2  | M3x5x4 Heat Set Inserts             || https://a.co/d/bnQD7Iu |  
+|  16 | M1.7x4 Self Tapping Screws          || https://a.co/d/1np5Nes |  
+|  4  | M3x12 Button Head Screws            || https://a.co/d/iqM3d6E |  
+|  2  | 100K ohm 1% 1/4w resistors          || https://a.co/d/3R0YmGM |  
+|  4  | Self-Adhesive Rubber Feet           || https://a.co/d/0q9TRmR |  
+|  1  | Double Sided Tape (To hold Battery) || https://a.co/d/gM5SWwH |
+|  1  | 800mAh Li-ion Battery               || https://a.co/d/gbr1Yft |
+<br>    
 
-- ✅ WeighMyBru PCB and components
-- ✅ 3D printed enclosure parts
-- ✅ Load cell and mounting hardware
-- ✅ ESP32 microcontroller
-- ✅ Screwdriver set
-- ✅ Soldering iron and solder
-- ✅ Wire strippers
+## Wiring Diagram
+
+<img src="/images/wiring-diagram.png" alt="Wiring Diagram" width="600" height="600"><br>
 
 ## Assembly Steps Overview
 
