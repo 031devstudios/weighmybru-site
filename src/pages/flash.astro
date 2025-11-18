@@ -1,0 +1,21 @@
+---
+// Flash firmware page - ESP32 Web Tools integration
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/sections/Header.astro';
+import Footer from '../components/sections/Footer.astro';
+import FlashFirmware from '../components/FlashFirmware.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <BaseHead title="Flash Firmware - WeighMyBru²" description="Flash WeighMyBru² firmware to your ESP32 board using ESP32 Web Tools" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <FlashFirmware />
+    </main>
+    <Footer />
+  </body>
+</html>
