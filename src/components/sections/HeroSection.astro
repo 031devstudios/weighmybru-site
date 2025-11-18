@@ -11,6 +11,7 @@ interface Props {
   title: string;
   subtitle?: string;
   showCTA?: boolean;
+  showLogo?: boolean;
   primaryCTA?: Cta;
   secondaryCTA?: Cta;
 }
@@ -19,6 +20,7 @@ const {
   title,
   subtitle,
   showCTA = false,
+  showLogo = true,
   primaryCTA,
   secondaryCTA
 } = Astro.props as Props;
@@ -27,14 +29,16 @@ const {
 <section class="w-full pt-0 pb-0 md:pt-0 md:pb-0">
   <div class="mx-auto max-w-5xl px-4 text-center">
     <!-- WeighMyBru Logo -->
-    <div class="mb-6">
-      <img 
-        src={weighMyBruLogo.src} 
-        alt="WeighMyBru Logo" 
-        class="mx-auto block w-52 md:w-86"
-        style="height: auto;"
-      />
-    </div>
+    {showLogo && (
+      <div class="mb-6">
+        <img 
+          src={weighMyBruLogo.src} 
+          alt="WeighMyBru Logo" 
+          class="mx-auto block w-52 md:w-86"
+          style="height: auto;"
+        />
+      </div>
+    )}
     
     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground">
       <span class="bg-gradient-to-r from-[var(--accent)] to-[var(--accent-dark)] bg-clip-text text-transparent">{title}</span>
