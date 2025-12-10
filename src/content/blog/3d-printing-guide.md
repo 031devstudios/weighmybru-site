@@ -16,6 +16,13 @@ Welcome to the complete guide for 3D printing your WeighMyBru coffee scale case!
 ---
 
 ## 📁 Download Files
+🔗 **Download Link:** [WeighMyBru 3MF Files](https://github.com/031devstudios/weighmybru2/tree/master/cad/3mf)
+
+> ⚠️ **Warning** ⚠️ <br>
+> There is a know issue with some of the touch pads not sensing through the 3D printed housing. In some cases, removing the capacitor
+> labelled C1 is sufficient, and in other cases it may be necessary to print the housing with a 0.8mm thickness. The 0.8mm thick housing
+> has 3D printed clamps to hold the touch pads in place, because if you use screws they will protrude through the top of the housing due
+> to its reduced thickness.
 
 ### 3MF Files Available
 |           **Part**           | **SeeedStudio XAIO ESP32-S3** | **ESP32-S3 Supermini** | **Quantity** |
@@ -26,8 +33,12 @@ Welcome to the complete guide for 3D printing your WeighMyBru coffee scale case!
 | WeighMyBru² - M2 Washer      |               ✅              |             ✅        |       4      |
 | WeighMyBru² - ESP32 Clamp    |               ❌              |             ✅        |       1      |
 | WeighMyBru² - XAIO Clamp     |               ✅              |             ❌        |       1      |
+| WeighMyBru² - Top (0.8mm)    |               ☑️              |             ☑️        |       1      |
+| WeighMyBru² - Touch Clamp    |               ☑️              |             ☑️        |       2      |
 
-> 🔗 **Download Link:** [WeighMyBru 3MF Files](https://github.com/031devstudios/weighmybru2/tree/master/cad/3mf)
+✅ - Required <br>
+❌ - Not Required <br>
+☑️ - Optional (If touch pads don't sense)
 
 ---
 
