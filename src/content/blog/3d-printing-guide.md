@@ -143,9 +143,8 @@ Once your case is printed and post-processed:
 
 We love seeing community builds! Share your finished WeighMyBru scale:
 
-- **Tag us on social media:** @weighmybru
+- **Tag us on social media:** @weighmybru (Coming soon)
 - **Join our community:** [WeighMyBru Discord](https://discord.gg/weighmybru) 
-- **Submit photos:** [Community Gallery](https://github.com/weighmybru/community)
 
 > 🏆 **Pro Tip:** Consider printing in coffee-themed colors like brown, cream, or espresso black for the perfect aesthetic match!
 
