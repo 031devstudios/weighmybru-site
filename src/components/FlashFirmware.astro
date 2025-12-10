@@ -260,7 +260,7 @@
     const installButtons = document.querySelectorAll('esp-web-install-button');
     installButtons.forEach(button => {
       button.addEventListener('state-changed', function(e) {
-        const state = e.detail;
+        const state = (e as CustomEvent).detail;
         console.log('Install state:', state);
       });
     });
