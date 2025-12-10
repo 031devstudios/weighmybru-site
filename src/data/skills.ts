@@ -33,14 +33,14 @@ export const skills = [
   {
     icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>`,
     title: "Community Image",
-    description: "WeighMyBru community and open source development.",
+    description: "WeighMyBru community and Creative Commons licensed development.",
     image: pic3.src,
   },
-  // Row 3: Community & Open Source Text
+  // Row 3: Community & Creative Commons Text
   {
     icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5 0 1.93-1.57 3.5-3.5 3.5s-3.5-1.57-3.5-3.5c0-1.93 1.57-3.5 3.5-3.5zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>`,
-    title: "Community & Open Source",
-    description: "Join a growing community of coffee lovers. Open development means transparent progress, user-driven features, and endless customization possibilities.",
+    title: "Community & Creative Commons",
+    description: "Join a growing community of coffee lovers. CC BY-NC-SA 4.0 licensed development means transparent progress, user-driven features, and endless customization possibilities.",
   },
 ];
 
