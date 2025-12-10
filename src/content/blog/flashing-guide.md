@@ -7,9 +7,26 @@ category: 'Firmware'
 tags: ['flashing', 'firmware', 'esp32', 'software']
 ---
 
-# Flashing
+# Flashing WeighMyBru Firmware
 
-WeighMyBru ESP32 Flash Guide - PlatformIO
+> 🚀 **Recommended Method:** Use our web-based flash tool for the easiest installation experience!
+
+## ⭐ Method 1: Web Flash Tool (Recommended)
+
+The fastest and easiest way to flash your WeighMyBru firmware is directly through your web browser using ESP32 Web Tools.
+
+### **Steps:**
+1. **Connect your ESP32** to your computer via USB
+2. **Visit the Flash Page:** [Flash WeighMyBru Firmware](/flash)
+3. **Follow the on-screen instructions** - no software installation required!
+
+> 💡 **Benefits:** No downloads, no setup, works on any modern browser with WebSerial support.
+
+---
+
+## 📋 Method 2: Manual PlatformIO Installation
+
+For advanced users who want to customize the firmware or contribute to development, you can use PlatformIO:
 
 ## Prerequisites Check
 - ✅ VSCode installed
@@ -74,41 +91,20 @@ sudo apt install git
 
 ---
 
-## Step 4: Verify/Configure platformio.ini
+## Step 4: Select Your Board Environment
 
-Check if the project has a `platformio.ini` file in the root directory. If not, or if you need to modify it for ESP32-S3, create/update it with:
+WeighMyBru supports two ESP32 board variants. You need to select the correct environment that matches your hardware:
 
-```ini
-[env:esp32-s3-devkitc-1]
-platform = espressif32@6.12.0
-board = esp32-s3-devkitc-1
-framework = arduino
-monitor_speed = 115200
-board_upload.flash_size = 4MB
-board_build.filesystem = littlefs
-board_build.partitions = huge_app.csv
-upload_protocol = esptool
-upload_speed = 460800
-upload_flags = 
-  --chip=esp32s3
-  --before=default_reset
-  --after=hard_reset
-monitor_rts = 0
-monitor_dtr = 0
-build_flags = 
-  -DARDUINO_USB_CDC_ON_BOOT=1
-  -DBOARD_HAS_PSRAM
-  -Os
-  -DCORE_DEBUG_LEVEL=0
+### **Supported Boards:**
+- **`[env:esp32s3-supermini]`** - For ESP32-S3-Supermini boards
+- **`[env:esp32s3-xiao]`** - For SeeedStudio XIAO ESP32-S3 boards
 
-lib_deps = 
-	robtillaart/HX711@^0.6.0
-	https://github.com/me-no-dev/ESPAsyncWebServer.git
-	https://github.com/me-no-dev/AsyncTCP.git
-	h2zero/NimBLE-Arduino@^1.4.0
-	adafruit/Adafruit SSD1306@^2.5.7
-	adafruit/Adafruit GFX Library@^1.11.9
-```
+### **How to Select:**
+1. **Check your board** - Look at the board label or documentation to identify which variant you have
+2. **In PlatformIO:** When building or uploading, make sure to select the correct environment from the dropdown
+3. **Look for the environment selector** in the bottom blue status bar or in the PlatformIO project tasks
+
+> ⚠️ **Important:** Using the wrong environment may cause flashing issues or incorrect pin configurations.
 
 ---
 
