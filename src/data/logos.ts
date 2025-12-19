@@ -37,7 +37,7 @@ const integrationStatus: Record<string, 'available' | 'coming-soon'> = {
   'Wi Fi': 'available',
   'Bluetooth': 'available',
   'Gaggiuino': 'available',
-  'Clever Coffee': 'coming-soon',
+  'Clever Coffee': 'available',
   'Weighmybru': 'available',
 };
 
