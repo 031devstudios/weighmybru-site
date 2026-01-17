@@ -24,6 +24,8 @@ Follow along with our detailed assembly video guide:
 </div>
 
 ## Bill Of Materials
+> ⚠️ **Warning** ⚠️ <br>
+There is a known issue with certain ESP32-S3 Supermini board where they are NOT discoverable using GaggiMate. The recommended board is the Seeed Studio XIAO ESP32S3 listed in the BOM below. <br> <br>
 **NOTE** <br>
 Ensure the correct items are selected when purchasing. Some of the links have multiple options. It is always a good idea to purchase extra boards for items like HX711 or Capacitive Touch Pads, as sometimes depinning these can destroy the boards traces.
 
@@ -31,7 +33,7 @@ Ensure the correct items are selected when purchasing. Some of the links have mu
 |-----|-------------------------------------|--------------------------------------------|--------------------------|
 |  1  | 500g Mini Loadcell (I-shaped)       | https://s.click.aliexpress.com/e/_c4C1w6PZ | https://a.co/d/6kvxZ0H |  
 |  1  | HX711                               | https://s.click.aliexpress.com/e/_c3TSpcUT | https://a.co/d/3KiYRkA |  
-|  1  | ESP32-S3-Supermini Board            | https://s.click.aliexpress.com/e/_c3ay7dDv | https://a.co/d/6289vbS |  
+|  1  | Seeed Studio XIAO ESP32S3           | https://s.click.aliexpress.com/e/_c2R3kzRZ | https://a.co/d/iER4CEr |  
 |  2  | Capacitive Tocuh Pads               | https://s.click.aliexpress.com/e/_c3WIlVuX | https://a.co/d/014di6l |  
 |  1  | 0.91" SSD1306 OLED Display          | https://s.click.aliexpress.com/e/_c3kybwLD | https://a.co/d/9UClWku |  
 |  1  | JST-PH 2.0 Male Connector           | https://s.click.aliexpress.com/e/_c3F8rJlv | https://a.co/d/3BZGuHW |  
@@ -48,7 +50,11 @@ Ensure the correct items are selected when purchasing. Some of the links have mu
 
 ## Wiring Diagram
 
-<img src="/images/wiring-diagram.png" alt="Wiring Diagram" width="600" height="600"><br>
+Seeed Studio XIAO ESP32S3
+<img src="/images/xiao-wiring.png" alt="XIAO Wiring Diagram" width="600" height="600"><br>
+
+ESP32 Supermini
+<img src="/images/wiring-diagram.png" alt="Supermini Wiring Diagram" width="600" height="600"><br>
 
 ## Assembly Steps Overview
 
