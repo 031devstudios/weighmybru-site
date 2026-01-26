@@ -19,8 +19,8 @@
           "offset": 65536
         },
         {
-          "path": "spiffs.bin",
-          "offset": 2097152
+          "path": "littlefs-supermini.bin",
+          "offset": 3211264
         }
       ]
     }
